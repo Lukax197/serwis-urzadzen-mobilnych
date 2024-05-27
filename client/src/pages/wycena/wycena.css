@@ -1,0 +1,230 @@
+.wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.wrapper h1 {
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #01bf71;
+    letter-spacing: .5px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin-top: 30px;
+}
+
+.cardWycena {
+    min-height: 220px;
+    width: 360px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.ofertaCardIcon {
+    margin: 20px;
+    color: rgb(1, 191, 113);
+    font-size: 30px
+}
+
+.cardWycena h2 {
+    color: black;
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cardWycena p {
+    margin-top: 10px;
+    color: #6c757d;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cardWycena:hover .ofertaCardIcon,
+.cardWycena:hover p {
+    color: #fff;
+}
+
+.cardWycena:hover h2 {
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+.cardWycena:hover {
+    background: linear-gradient(45deg,
+                                rgba(1, 191, 113, 0.85) 0%,
+                                rgba(1, 146, 86, 0.85) 100%);
+    background-size: cover;
+}
+
+@media(max-width: 1179px) {
+    .wrapper {
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    .wrapper h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    .content-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cardWycena {
+        min-width: 300px;
+        margin: 10px auto;
+        width: 80%;
+    }
+}
+
+.infoBottom {
+    text-align: center;
+    align-items: center;
+}
+
+.orderShow {
+    /* flex: 1; */
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    width: 70%;
+}
+
+.orderShow p {
+    font-weight: 600;
+}
+
+.searchSection {
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.typUrzadzeniaSelect {
+    width: 300px;
+    /* display: flex; */
+    margin: 20px auto;
+}
+
+.searchBarWycena {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(max-width: 530px) {
+    .searchSection {
+        width: 100%;
+    }
+    
+    .typUrzadzeniaSelect {
+        width: 70%;
+        /* display: flex; */
+        margin: 20px auto;
+    }
+    
+    .searchBarWycena {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .orderShow {
+        width: 100%;
+    }
+}
+
+.searchInputs {
+    margin-top: 105px;
+    display: flex;
+}
+
+.search {
+    background-color: white;
+    margin-top: -100px;
+}
+
+/* .search input {
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 1200px;
+} */
+
+.searchIcon {
+    font-size: 25px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchIcon svg {
+    font-size: 35px;
+}
+
+.dataResult {
+    margin-top: 5px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.dataResult::-webkit-scrollbar {
+    display: none;
+}
+
+.dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.dataItem p {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.dataItem:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}

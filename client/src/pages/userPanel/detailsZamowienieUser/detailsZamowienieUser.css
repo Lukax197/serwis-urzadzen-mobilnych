@@ -1,0 +1,511 @@
+.zamowienieUser {
+    flex: 4;
+    margin: 20px 5px 20px 0px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.zamowienieItem {
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    width: 50%;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+    height: 160px;
+    text-decoration: none;
+    color: black;
+}
+
+.zamowienieItem:hover {
+    -webkit-box-shadow: -1px 0px 23px -4px rgba(66, 68, 90, 1);
+    -moz-box-shadow: -1px 0px 23px -4px rgba(66, 68, 90, 1);
+    box-shadow: -1px 0px 23px -4px rgba(66, 68, 90, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+.nazwaP {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 858px) {
+    .zamowienieItem {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .nazwaP {
+        padding-top: 5px;
+    }
+
+    .zamowienieItem {
+        height: 180px;
+    }
+
+    .zamowienieStatus {
+        width: 100% !important;
+    }
+
+    .zamowienieInfoLeft {
+        height: 150px;
+    }
+
+    .zamowienieInfoRight {
+        height: 150px;
+    }
+}
+.zamowienieInfoLeft {
+    width: 60%;
+    float: left;
+    height: 130px;
+    text-align: left;
+}
+
+.zamowienieInfoLeft>h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.zamowienieInfoRight {
+    width: 40%;
+    float: left;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zamowienieStatus {
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userListUser {
+    display: flex;
+    align-items: center;
+}
+
+.userListImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.userListEdit {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.userListEdit.disable {
+    background-color: gray;
+}
+
+.userListDelete {
+    color: red;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.userListDelete.disable {
+    color: gray;
+}
+
+.rolesList {
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+.zgloszenie {
+    flex: 4;
+    padding: 20px;
+    /* flex-wrap: wrap-reverse; */
+    margin-top: 20px;
+}
+
+.zamowienieUserTitle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.orderAddButton {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: teal;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.orderContainer {
+    display: flex;
+    margin-top: 20px;
+    /* flex-wrap: wrap; */
+    /* position: flex; */
+    flex-direction: column;
+}
+
+.zamowienieShow {
+    /* flex: 1; */
+    /* position: relative; */
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+}
+
+.orderUpdate {
+    /* flex: 2; */
+    /* width: 100%; */
+    /* position: relative; */
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    /* margin-left: 20px; */
+}
+
+.orderShowTop {
+    display: flex;
+    align-items: center;
+}
+
+.orderShowImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    /* object-fit: cover; */
+    background-color: gray;
+    color: white;
+    padding: 5px;
+}
+
+.orderShowTopTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.orderShowUsername {
+    font-weight: 600;
+}
+
+.zamowienieShow, .zamowienieTitle {
+    font-weight: 300;
+}
+
+.orderShowBottom {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orderShowBottomItem {
+    margin-right: 30px;
+}
+
+.orderShowTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(175, 170, 170);
+}
+
+.orderShowInfo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #444;
+}
+
+.orderShowIcon {
+    font-size: 16px;
+}
+
+.orderShowInfoTitle {
+    margin-left: 10px;
+}
+
+.orderUpdateTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.orderUpdateForm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.orderUpdateItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.orderUpdateItem>label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.orderUpdateInput {
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+    padding: 2px;
+}
+
+.orderUpdateCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.orderUpdateRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.orderUpdateUpload {
+    flex-direction: column;
+}
+
+.orderUpdateUpload>label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.orderUpdateImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.orderUpdateIcon {
+    cursor: pointer;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.orderUpdateButton {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+}
+
+.orderRoleCheckboxItem {
+    margin-top: 5px;
+}
+
+.orderRoleCheckbox {
+    margin-left: 10px;
+}
+
+.zgloszenieStatus {
+    position: absolute;
+    padding: 10px;
+    border-radius: 15px;
+    right: 50px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 722px) {
+    .zgloszenieStatus {
+        position: relative;
+        right: unset;
+        margin-left: 10px;
+    }
+}
+
+.orderUpdateItemCheckbox {
+    display: flex;
+    margin-top: 20px;
+}
+
+.orderUpdateItemCheckbox>input {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.orderUpdateItemCheckbox>label {
+    margin-left: 25px;
+}
+
+.orderUpdateTextarea {
+    resize: none;
+    padding: 5px;
+}
+
+.orderUpdateLeft {
+    padding: 20px;
+}
+
+.rozliczenieTable {
+    /* max-width: 100px; */
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.rozliczenieTable td, .rozliczenieTable th {
+    border: 3px solid white;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.rozliczenieInput {
+    width: 80px;
+    height: 40px;
+}
+
+.rozliczenieInput.left {
+    width: 200px;
+    height: 40px;
+}
+
+.rozliczenieTable th {
+    background-color: #000;
+    color: white;
+}
+
+.rozliczenieTable td {
+    background-color: rgb(155, 155, 155);
+    color: white;
+}
+
+.czesciTable {
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.czesciTable td, .czesciTable th {
+    border: 3px solid white;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.czesciTable th {
+    background-color: #000;
+    color: white;
+}
+
+.czesciTable td {
+    background-color: rgb(155, 155, 155);
+    color: white;
+}
+
+.czesciTable tr:hover td {
+    background-color: rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+.czesciTable tr:hover:last-child td {
+    background-color: rgb(155, 155, 155);
+    cursor: unset;
+}
+
+.dodajCzescButton {
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    border: 1px solid #01bf71;
+}
+
+.dodajCzescButton:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
+
+.usunCzescButton {
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.usunCzescButton:hover {
+    background-color: rgb(245, 99, 99);
+}
+
+.orderUpdateLeft.podsumowanie {
+    word-wrap: break-word;
+}
+
+.opisPodsumowanie {
+    font-size: 15px;
+    font-style: italic;
+    color:#6b6b6b
+}
+
+.podsumowanieTable th, .podsumowanieTable td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.podsumowanieTable {
+    margin-top: 10px;
+}
+
+.anulujZgloszenieBtn {
+    position: relative;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.anulujZgloszenieBtn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+.zgloszenieUserOptions {
+    text-align: right;
+}

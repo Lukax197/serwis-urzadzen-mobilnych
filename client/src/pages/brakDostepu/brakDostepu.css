@@ -1,0 +1,39 @@
+.brakDostepu {
+    text-align: center;
+    margin-top: 100px;
+    min-height: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.brakDostepu>img {
+    margin-top: 40px;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.brakDostepu>h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.brakDostepu>button {
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    border: 2px solid #01bf71;
+}
+
+.brakDostepu>button:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}

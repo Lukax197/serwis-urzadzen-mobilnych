@@ -1,0 +1,40 @@
+.uslugiList {
+    flex: 4;
+    margin: 20px 5px 20px 0px;
+}
+
+.uslugiListEdit {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.uslugiListEdit.disable {
+    background-color: gray;
+    cursor: unset;
+}
+
+.uslugiListDelete {
+    color: red;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.uslugiListDelete.disable {
+    color: gray;
+    cursor: unset;
+}
+
+.searchBar {
+    width: 50vw;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.dialogInput {
+    margin-top: 20px;
+}

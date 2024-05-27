@@ -1,0 +1,23 @@
+.wiadomosci {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.wiadomosci>h1 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#tabelaWiadomosci {
+    height: 610px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    #tabelaWiadomosci {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

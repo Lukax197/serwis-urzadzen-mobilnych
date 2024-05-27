@@ -1,0 +1,93 @@
+.kontaktContainer {
+    margin-top: 130px;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.kontakt {
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    margin-top: 50px;
+    width: 85%;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.kontaktTitle {
+    text-transform: uppercase;
+    color: #01bf71;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.kontaktMap {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+    .kontaktMap {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .kontaktMap {
+        margin-top: 0px;
+    }
+}
+
+.kontaktInfos {
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    width: 99%;
+    text-align: center;
+    display: inline-flex;
+}
+
+@media screen and (max-width: 760px) {
+    .kontaktInfos {
+        flex-direction: column;
+    }
+}
+
+.kontaktInfoItem {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    /* -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 1.0); */
+    height: 350px;
+    flex-direction: column;
+}
+
+.kontaktInfoP {
+    margin-top: 20px;
+}
+
+.kontaktButton {
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #01bf71;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.kontaktButton:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
+
+.kontaktGodzina {
+    margin-top: 5px;
+}

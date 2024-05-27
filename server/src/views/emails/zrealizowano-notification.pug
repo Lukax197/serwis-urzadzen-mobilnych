@@ -1,0 +1,29 @@
+<div style='background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("https://cdn.thewirecutter.com/wp-content/media/2021/07/righttorepair-2048px-iStock-1226436218-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=980&dpr=2"); background-repeat: no-repeat; background-size: cover; padding: 25px; padding-bottom: 35px; color: white; width: 1000px; font-size: 16px;'>
+    <h1> Udało się! Twoje urządzenie zostało naprawione! </h1>
+    p #{name}, pragniemy Cię poinformować, że Twoje urządzenie zostało naprawione. <br /> <br />
+    p Do twojego zgłoszenia został również wystawiony dokument serwisowy: <br /> <br />
+    p Opis diagnozy urządzenia:
+    p <i>#{opis}</i> <br/> <br/>
+
+    p Rozliczenie: <br />
+    table(style='background: rgba(255,255,255,0.5); border: 4px solid none; margin: 10px 0px 20px 0px; color: white;')
+        thead
+            tr
+              th(style='padding: 10px; max-width: 150px;') Nazwa towaru/usługi
+              th(style='padding: 10px; width: 100px;') Ilość
+              th(style='padding: 10px; width: 100px;') Cena (zł)
+        tbody
+          each usluga in uslugi
+              tr
+                td(style='padding: 10px; text-align: center; max-width: 200px; word-break: break-word;') #{usluga.nazwaUslugi}
+                td(style='padding: 10px; text-align: center;') #{usluga.ilosc}
+                td(style='padding: 10px; text-align: center;') #{usluga.cena}
+        <tr> <td> </td> <th style='text-align: center; padding: 10px;'> Suma: </th> <td style='text-align: center; padding: 10px;'> #{cena} </td> </tr>
+    <br />
+    p Teraz czekamy na zaksięgowanie wpłaty za naprawę, bądź osobiste odebranie urządzenia.
+    <h3>Numer konta: 49 1020 2892 2276 3005 0000 0000</h3>
+    <h3>W tytule wpisz: #{nrZgloszenia}</h3>
+    p Jeśli wcześniej wybrałeś dostawę kurierem, bądź paczkomatem - po zaksiegowaniu wpłaty od razu nadamy przesyłkę kurierską na adres podany w zgłoszeniu. <br /> <br />
+    <b> Pozdrawiamy, </b> <br/>
+    <i> Zespół MobileService.pl </i>
+</div>

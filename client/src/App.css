@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.App {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: whitesmoke;
+}
+
+.drop-zone {
+  border: 2px dashed black;
+  border-radius: 5px;
+  padding: 75px;
+  margin: 1rem;
+  text-align: center;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.offscreen {
+  display: none;
+}
+
+.errmsg {
+  color: white;
+  text-align: center;
+  background-color: #ff8080;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.offscreen {
+  display: none;
+}
+
+.successmsg {
+  color: white;
+  text-align: center;
+  background-color: #01bf71;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.ikona {
+  color: #000;
+  font-size: 3rem;
+}
+
+.mainContainer {
+  margin-top: 80px;
+  height: auto;
+}
+
+.userPanelContainer {
+  margin-top: 130px;
+  height: auto;
+}
+
+.cnt {
+  display: flex;
+  margin-top: 10px;
+}
+
+.others {
+  flex: 4;
+  margin-top: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
